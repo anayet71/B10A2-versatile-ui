@@ -9,7 +9,7 @@
 body{
     max-width: 1440px;
     margin: 0 auto;
-    background: black;
+    background: rgb(0, 0, 0);
 }
 header{
     background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
@@ -30,7 +30,7 @@ header{
     font-weight: 800;
     margin-top: 0;
 }
-.nav-item{
+.nav-items{
     display: flex;
     gap: 47px;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -39,19 +39,37 @@ header{
     padding-right: 20px;
     border-radius: 40px;
 }
-.nav-item li{
-    list-style: none;
-   
+.nav-items li{
+    list-style: none;  
 }
-.nav-item  button{
+.nav-items  button{
     background-color: rgb(230, 83, 60);
     padding: 12px 24px;
     border-radius: 40px;
 
 }
-.nav-item li a {
+.nav-items li a {
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 400;
+}
+.nav-icon{
+    color: white;
+    display: none;
+    font-size: 1.6rem;
+}
+
+/* Responsive for mobile */
+
+@media screen and (max-width:576px) {
+    .nav-items {
+        display: none; /* Hide nav items on mobile */
+    }
+    .nav-icon {
+        display: block; /* Show the icon on mobile */
+    }
+    .nav-title{
+        margin: 0;
+    }
 }
