@@ -1,5 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@font-face{
+    font-family: specialfont;
+    src:url(../font/Miama-Regular.ttf);
+}
 
 .inter-font {
   font-family: "Inter", sans-serif;
@@ -9,13 +13,17 @@
 body{
     max-width: 1440px;
     margin: 0 auto;
-    background: rgb(0, 0, 0);
+    background-color: rgb(14, 13, 13); 
+    background:  black;
 }
 header{
-    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
-    width: 90%;
-    margin: 0 auto;
-  
+    max-width: 100%;
+    margin: 0 auto; 
+    background: linear-gradient(to bottom,black, rgb(41, 40, 40), black);
+}
+.header{
+    width: 100%;
+   
 }
 .navbar{
     display: flex;
@@ -59,7 +67,87 @@ header{
     display: none;
     font-size: 1.6rem;
 }
+/* Banner */
+.banner{
+    display: flex;
+    margin-top: 97px;
+    gap: 167px;
+}
+.banner-text{
+    color: white;
+    width: 50%;
+}
+.banner-title{
+    font-size:4.8rem;
+    margin-bottom: 28px;
 
+}
+.banner-title span{
+    font-family: specialfont;
+}
+.text-details{
+    color: rgba(255, 255, 255, 0.5);
+}
+.primary-btn{
+    background-color: rgb(230, 83, 60);
+    color: white;
+    padding: 16px 40px;
+    border-radius: 42px;
+}
+.download-btn{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    padding: 16px 40px;
+    border-radius: 42px;
+}
+
+.banner-image{
+    background-image: url(../images/Images\ 2.png);
+    width: 50%;
+    background-repeat: no-repeat;
+
+}
+.videos-btn{
+    background-color: rgb(57, 57, 57);
+    color: white;
+    border-radius: 12px;
+    padding: 16px 23px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 193px; 
+    position: relative;
+    top: 114px;
+    left: 225px;
+}
+.video-num{
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+.tutorial-btn{
+    backdrop-filter: blur(20px);
+    color: white;
+    border-radius: 12px;
+    padding: 16px 23px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 193px;
+    position: relative;
+    top: 326px;
+    left: -100px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+}
+.tutorial-num{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.round-red{
+    background-color:#E6533C ;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+}
 /* Responsive for mobile */
 
 @media screen and (max-width:576px) {
