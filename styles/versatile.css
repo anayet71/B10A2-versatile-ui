@@ -26,7 +26,7 @@ header{
     width: 100%; 
 }
 .navbar{
-    display: flex;
+    display:flex;
     justify-content: space-between;
     margin-top: 57px;
     align-items: center;
@@ -39,7 +39,7 @@ header{
     margin-top: 0;
 }
 .nav-items{
-    display: flex;
+    display:flex;
     gap: 47px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     align-items: center;
@@ -64,12 +64,12 @@ header{
 }
 .nav-icon{
     color: white;
-    display: none;
+    display:none;
     font-size: 1.6rem;
 }
 /* Banner */
 .banner{
-    display: flex;
+    display:flex;
     margin-top: 32px;
     gap: 54px;
     align-items: center;
@@ -91,27 +91,29 @@ header{
     color: rgba(255, 255, 255, 0.5);
 }
 .banner-btn{
-    display: flex;
+    display:flex;
     gap: 14px;
 }
 .primary-btn{
     background-color: rgb(230, 83, 60);
     color: white;
-    padding: 16px 40px;
     border-radius: 42px;
+    width: 224px;
+    height: 54px;
 }
 .download-btn{
     background-color: rgba(0, 0, 0, 0.1);
     color: white;
     border: 2px solid white;
-    padding: 16px 40px;
+    width: 224px;
+    height: 54px;
     border-radius: 42px;
 }
 .banner-model{
     width: 50%;
 }
 /* .banner-image{
-    display: flex;                
+    display:flex;                
     justify-content: center;    
     align-items: center; 
 } */
@@ -136,7 +138,7 @@ header{
     font-weight: 900;
 }
 .tutorial-btn{
-    display: flex;
+    display:flex;
     backdrop-filter: blur(20px);
     color: white;
     border-radius: 12px;
@@ -167,14 +169,15 @@ header{
     text-align: center;
     margin-bottom: 50px;
 }
-.habit-title{
+.common-title{
     font-size: 3.2rem;
     color: white;
     margin-bottom: 14px;
 }
 .four-habits{
-    display: flex;
+    display:flex;
     justify-content: space-around;
+    margin-bottom: 100px;
 
 }
 .habit{
@@ -188,6 +191,24 @@ header{
     color: white;
     margin-top: 30px;
     margin-bottom: 0px;
+}
+.run-extra{
+   display:flex;
+   justify-content: space-between;
+   background-color: #222222;
+   padding: 50px;
+   border-radius: 10px;
+   width: 85%;
+   margin: 0 auto;
+}
+.run-extra-text{
+    width: 443px;
+}
+.run-extra-text .common-title{
+    margin-top: 0px;
+}
+.run-extra-image img{
+    border-radius: 10px;
 }
 
 
@@ -205,10 +226,10 @@ header{
     }
     
     .nav-items {
-        display: none; /* Hide nav items on mobile */
+        display:none; /* Hide nav items on mobile */
     }
     .nav-icon {
-        display: block; /* Show the icon on mobile */
+        display:block; /* Show the icon on mobile */
     }
     .nav-title{
         margin: 0;
@@ -233,7 +254,6 @@ header{
         flex-direction: column;
         width: 50%;
         margin: 0 auto;
-       
     }
     
 
