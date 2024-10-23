@@ -265,19 +265,38 @@ input, select {
     border-radius: 5px;
 }
 /* Team section */
+.team{
+    margin-top: 90px;
+}
+.team .common-title, .team .text-details{
+    width: 45%;
+    margin: 0 auto;
+    text-align: center;
+}
+.team .text-details{
+    margin-bottom: 60px;
+    margin-top: 15px;
+}
 .all-trainer{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    background-color: #222222;
+    gap: 20px;
+    justify-items: center;
+    width: 1260px;
+    margin: 0 auto;
   
 }
 .trainer{
     position: relative;
+    margin: 20px;
 }
 .trainer img{
-    width: 100%;
-    height: 80%;
+    width: 326px;
+    height: 272px; 
     object-fit: cover;
     filter: brightness(75%);
+    border-radius: 18px;
 }
 .trainer-info{
     margin-top: -10px;
@@ -286,9 +305,14 @@ input, select {
     left: 33px;
 
 }
+.trainer-info .text-details{
+    margin: 0px;
+}
+
 .trainer-name{
     color: white;
     font-size: 1.3rem;
+    margin: 0;
 }
 
 /* Responsive for mobile */
