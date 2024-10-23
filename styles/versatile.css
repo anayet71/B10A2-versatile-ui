@@ -134,8 +134,8 @@ header{
     border: 1px solid rgba(255, 255, 255, 0.1);
     width: 193px; 
     position: relative;
-    top: -554px;
-    left: 368px;
+    top: -437px;
+    left: 260px;
 }
 
 .video-num{
@@ -151,10 +151,10 @@ header{
     border: 1px solid rgba(255, 255, 255, 0.1);
     width: 193px;
     position: relative;
-    left: -27px;
+    left: -41px;
     align-items: center;
     gap: 12px;
-    bottom: 316px;
+    bottom: 281px;
 }
 .tutorial-num{
     font-size: 1.5rem;
