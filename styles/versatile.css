@@ -220,12 +220,11 @@ header{
 .bmi-chart{
     background-color: #222222;
     display: flex;
-    justify-content: space-evenly;
-    gap:175px ;
+    justify-content: space-around;
+    padding-top: 20px;
+    
 }
-.bmi-indication{
 
-} 
 .bmi-subtitle{
     font-size: 1.75rem;
     color: white;
@@ -243,7 +242,7 @@ tr td{
     color: rgba(255, 255, 255, 0.5);
 }
 .calculate-bmi{
-    width: 577px;
+    width: 500px;
 }
 .bmi-live-calculator {
     display: flex;
@@ -301,9 +300,8 @@ input, select {
 .trainer-info{
     margin-top: -10px;
     position: absolute;
-    bottom: 115px;
-    left: 33px;
-
+    bottom: 30px;
+    left: 18px;
 }
 .trainer-info .text-details{
     margin: 0px;
@@ -315,6 +313,33 @@ input, select {
     margin: 0;
 }
 
+/* Footer */
+footer{
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-top: 110px;
+}
+.fitness-info{
+    display: flex;
+    color: rgba(255, 255, 255, 0.5);
+    justify-content: space-evenly;
+    padding-top: 80px;
+}
+.company{
+    width: 443px;
+}
+.contact-info{
+    display: flex;
+    gap: 140px;
+}
+hr{
+    width: 90%;
+    border: 1px solid rgba(255, 255, 255, 0.1);;
+}
+.copyright{
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    padding-bottom: 35px;
+}
 /* Responsive for mobile */
 
 @media screen and (max-width:576px) {
@@ -325,10 +350,10 @@ input, select {
     }
     
     .nav-items {
-        display:none; /* Hide nav items on mobile */
+        display:none; 
     }
     .nav-icon {
-        display:block; /* Show the icon on mobile */
+        display:block; 
     }
     .nav-title{
         margin: 0;
@@ -363,6 +388,43 @@ input, select {
     }
     .run-extra-image{
         margin-top:30px;
+    }
+    /* BMI */
+    .bmi-chart{
+        flex-direction: column;
+    } 
+    .bmi-text {
+        width: 90%;
+    }
+    .bmi-indication{
+        width: 90%;
+        margin: 0 auto;
+    }
+      
+    .calculate-bmi{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .team .common-title, .team .text-details{
+        width: 90%;
+
+    }
+    .all-trainer{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+    /* Footer */
+    .fitness-info{
+        flex-direction: column;
+        padding-left: 10px;
+
+    }
+    .company .text-details{
+        width: 90%;
+    }
+    .contact-info{
+        flex-direction: column;
+        gap: 10px;
     }
 
 }
