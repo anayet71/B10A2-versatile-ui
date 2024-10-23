@@ -1,21 +1,25 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* 
 @font-face{
     font-family: specialfont;
     src:url(../font/Miama-Regular.ttf);
+} */
+* {
+    font-family: "Inter", sans-serif;
 }
-
-.inter-font {
+.inter-myfont {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
+  font-weight: <weight>;
   font-style: normal;
 }
+  
 body{
     max-width: 1440px;
     margin: 0 auto; 
     background: black;
 
 }
+
 header{
     max-width: 100%;
     margin: 0 auto; 
@@ -89,6 +93,7 @@ header{
 }
 .text-details{
     color: rgba(255, 255, 255, 0.5);
+
 }
 .banner-btn{
     display:flex;
@@ -150,8 +155,6 @@ header{
     align-items: center;
     gap: 12px;
     bottom: 316px;
-    
-
 }
 .tutorial-num{
     font-size: 1.5rem;
@@ -202,7 +205,7 @@ header{
    margin: 0 auto;
 }
 .run-extra-text{
-    width: 443px;
+    width: 400px;
 }
 .run-extra-text .common-title{
     margin-top: 0px;
@@ -210,11 +213,83 @@ header{
 .run-extra-image img{
     border-radius: 10px;
 }
+.bmi-text{
+    width: 45%;
+    margin: 0 auto;
+}
+.bmi-chart{
+    background-color: #222222;
+    display: flex;
+    justify-content: space-evenly;
+    gap:175px ;
+}
+.bmi-indication{
 
+} 
+.bmi-subtitle{
+    font-size: 1.75rem;
+    color: white;
+}
+table{
+    color: white;
+    border-collapse: collapse;
+}
+tr th, td{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: left;
+    padding: 10px 70px 10px 10px;
+}
+tr td{
+    color: rgba(255, 255, 255, 0.5);
+}
+.calculate-bmi{
+    width: 577px;
+}
+.bmi-live-calculator {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px;
+    margin-bottom:52px ;
+}
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+input, select {
+    width: 100%;
+    padding: 10px;
+    background-color: #444;
+    border: 1px solid #555;
+    color: white;
+    border-radius: 5px;
+}
+/* Team section */
+.all-trainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  
+}
+.trainer{
+    position: relative;
+}
+.trainer img{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    filter: brightness(75%);
+}
+.trainer-info{
+    margin-top: -10px;
+    position: absolute;
+    bottom: 115px;
+    left: 33px;
 
-
-
-
+}
+.trainer-name{
+    color: white;
+    font-size: 1.3rem;
+}
 
 /* Responsive for mobile */
 
@@ -255,6 +330,15 @@ header{
         width: 50%;
         margin: 0 auto;
     }
-    
+    /* Run extra */
+    .run-extra{
+        flex-direction: column;
+    }
+    .run-extra-text {
+        text-align: center;
+    }
+    .run-extra-image{
+        margin-top:30px;
+    }
 
 }
